@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Budget App</title>
+
+  <!--GOOGLE FONTS CDN-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600&family=Roboto:wght@300;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header>
+
+    <div class="header">
+
+      <div class="budget">
+        <div class="budget__title">Balance</div>
+        <div class="budget__total">
+          <img src="./assets/dollar.svg" class="dollar"></img>
+          <p id="totalBudget">0</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="budget-income">
+          <p class="budget-income__text">TOTAL INCOME</p>
+          <div class="budget-income__text"><img src="./assets/dollar-white.svg" class="dollar"></img>
+            <p id="totalIncome">0</p>
+          </div>
+        </div>
+
+        <div class="budget-outcome">
+          <p class="budget-outcome__text">TOTAL OUTCOME</p>
+          <div class="budget-outcome__text"><img src="./assets/dollar-white.svg" class="dollar"></img>
+            <p id="totalOutcome">0</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <div class="container wrapper">
+
+      <div class="income">
+        <h2>Income</h2>
+        <ul id="incomeList">
+
+
+
+        </ul>
+
+        <div class="input">
+          <input type="text" id="incomeTitleInput" name="title" placeholder="Title">
+          <input type="number" id="incomeAmountInput" name="amount" placeholder="$0">
+          <button class="add-income">+</button>
+        </div>
+      </div>
+
+      <div class="outcome">
+        <h2>Outcome</h2>
+        <ul id="outcomeList">
+
+
+
+        </ul>
+
+        <div class="input">
+          <input type="text" id="outcomeTitleInput" name="title" placeholder="Title">
+          <input type="number" id="outcomeAmountInput" name="amount" placeholder="$0">
+          <button class="add-outcome">+</button>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e0e0e0 font-family: "Raleway", sans-serif;
+}
+
+.header {
+  max-width: 90%;
+  width: 800px;
+  overflow: hidden;
+  height: 30vh;
+  margin: auto;
+  margin-top: 15vh;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.budget {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  padding: 3em;
+}
+
+.budget__title {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.budget__total {
+  height: fit-content;
+  border-radius: 26px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  padding: 1em;
+
+  font-size: 1.5rem;
+}
+
+.container {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr;
+  max-width: 80%;
+  margin: auto;
+}
+
+.dollar {
+  height: 1rem;
+  padding-right: 0.5rem;
+}
+
+.budget-income,
+.budget-outcome {
+  padding-top: 1em;
+  height: 15vh;
+  width: 90%;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1em;
+  font-size: 1.2rem;
+  border-radius: 26px;
+  background: #80ced7;
+  color: #e0e0e0;
+  font-weight: bolder;
+}
+
+.budget-outcome {
+  justify-self: flex-end;
+}
+
+.budget__total {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.budget-income__text,
+.budget-outcome__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#totalIncome,
+#totalOutcome {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+main {
+  margin: 100px;
+}
+
+#incomeList,
+#outcomeList {
+  list-style: none;
+  width: 50%;
+  margin: auto;
+}
+
+#incomeList li,
+#outcomeList li {
+  padding: 1em;
+  text-align: left;
+  display: flex;
+  justify-content: space-around;
+}
+
+#delete,
+#edit {
+  width: 3rem;
+  background: #80ced7;
+  color: #e0e0e0;
+  font-weight: 900;
+  text-align: center;
+  margin: 0 1em;
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 4rem;
+}
+
+.entry {
+  flex-grow: 2;
+}
+
+.input {
+  display: flex;
+  width: 50%;
+  margin: 10vh auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.input input {
+  outline: none;
+  border: none;
+  padding: 1em;
+  border-radius: 28px;
+  background: #e0e0e0;
+  box-shadow: 27px 27px 35px #a6a6a6, -27px -27px 35px #ffffff;
+}
+
+.add-income, .add-outcome {
+  padding: 1em;
+  height: fit-content;
+  background: #80ced7;
+  border: none;
+  border-radius: 30%;
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
+
+@media screen and (max-width: 600px) {
+  .budget {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1em;
+  }
+
+  .budget__title {
+    font-size: 1.2rem;
+  }
+
+  .budget__total {
+    font-size: 1.3rem;
+  }
+
+  .header {
+    height: fit-content;
+  }
+
+  .budget-income__text, .budget-outcome__text {
+    font-size: 1rem;
+  }
+
+  main {
+    margin: 5rem auto;
+  }
+
+  .income, .outcome {
+    width: 100%;
+  }
+
+  .input {
+    flex-flow: column wrap;
+    width: 100%;
+    gap: 1.4em;
+  }
+
+}
